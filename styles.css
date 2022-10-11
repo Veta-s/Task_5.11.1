@@ -3,8 +3,27 @@ body {
     padding: 0;
 }
 
+section:first-of-type h2:before{
+    content: 'New';
+    color: rgb(255, 0, 0);
+    display: inline-block;
+}
+
+section:nth-of-type(2) h2:before{
+    content: 'New';
+    color: rgb(255, 0, 0);
+    display: inline-block;
+}
+
 section:nth-child(even) {
     background: rgb(180, 162, 207);
+}
+
+section{
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 header {
@@ -55,7 +74,7 @@ article h2 {
 }
 
 article img {
-    width: 100%;
+    width:100%;
     height: 300px;
     object-fit: cover;
 }
